@@ -11,6 +11,10 @@
       margin-bottom: 30px;
       text-align: center;
   }
+  #whiteText {
+    color: #fff;
+  
+  }
   .copy{
     color: #fff;
   }
@@ -148,7 +152,7 @@
   margin-top: 100px;
  }
   footer {
-    background-color: #4d4d4d;
+      background:rgba(0,0,0,0.5);
   }
 
   img {
@@ -156,14 +160,9 @@
       height: 100%; 
       margin-bottom: 10px;
     }
-    #about{
-      background-image: url('/Users/AkilMomin/Desktop/about.png');
-        background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 100% 100%;
-    }
-    #about p {
-      color: #000;
+     #about{
+
+      background:rgba(0,0,0,0.5);
     }
     
     #services {
@@ -178,8 +177,7 @@
     }
     #projects {
 
-          color: #000;
-          background-color: #e6e6e6;
+      background:rgba(0,0,0,0.5);
     }
     #contact {
 
@@ -223,6 +221,20 @@
       border-color: transparent;
       color: #fff !important;
   }
+  video { 
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      transform: translateX(-50%) translateY(-50%);
+   background: url('') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+  }
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
@@ -260,12 +272,7 @@
       width: 70%;
       margin: auto;
   }
-  .topContainer {
-    background-image: url("/Users/AkilMomin/Desktop/limo/Assets/limowallpaper.jpg");
-    width: 100%;
-    height: 708px;
-
-  }
+ 
   .servicesWrap{
   display: block;
   width:90%;

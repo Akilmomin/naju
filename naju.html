@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +45,11 @@
   </div>
 </nav>
 
-
+  <video autoplay  poster="/Users/AkilMomin/Desktop/background3.jpg" id="bgvid" loop>
+         <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+        <source src="video_camera.webm" type="video/webm">
+        <source src="video_camera.mp4" type="video/mp4">
+  </video>
 <!--home page 
  
   
@@ -55,19 +60,20 @@
 <div id="about" class="container-fluid">
 
 <div class="col-sm-4">
-      <h1><marquee behavior="alternate">ABOUT US</marquee></h1><br>
+      <h1 id="whiteText">ABOUT US</h1><br>
       
     </div>
   <div class="row">
-
     <div class="col-sm-8 column">
     <br><br>
-      <p>Tech Support would like to personally thank you for inquiring about our services. We can assure you that you will not be displeased with any of the services that we provide. Our company takes pride in providing the highest quality service in all aspects of camera installtion and home Automation in the area as well as all surrounding areas since <strong>2011</strong>.</p><p> </p>
+      <h3 id="whiteText">Tech Support would like to personally thank you for inquiring about our services. We can assure you that you will not be displeased with any of the services that we provide. Our company takes pride in providing the highest quality service in all aspects of camera installtion and home Automation in the area as well as all surrounding areas since <strong>2011</strong>. </h3>
       <br><br><br>
       <br>
     </div>
     <div class="col-sm-4 sidepic" >
+    <!--
     <img src="logo4.png">
+    -->
     </div>
   </div>
 </div>
@@ -132,8 +138,8 @@
 
 <div id="projects" class="container-fluid">
   <div class="text-center">
-    <h1>PROJECTS</h1>
-    <h2> Here are some of our projects. It will help you to get some information about our quality work!! </h2> <br><br><br>
+    <h1 id="whiteText">PROJECTS</h1>
+    <h2 id="whiteText"> Here are some of our projects. It will help you to get some information about our quality work!! </h2> <br><br><br>
     <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
     <div class="hovereffect">
         <img class="img-responsive" src="sprinkel-town.jpg" alt="">
@@ -332,6 +338,9 @@
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
+
+      <form method="post">
+      <!--
         <div class="col-sm-12 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
@@ -350,7 +359,27 @@
         <div class="col-sm-12 form-group">
           <button class="btn btn-success btn-block pull-right" type="submit">Send</button>
         </div>
-      </div>	
+        -->
+        <div class="form-group">
+<label for="name">Your Name:</label>
+<input type="text" name="name" class="form-control" placeholder="Your Name"
+/>
+</div>
+<div class="form-group">
+<label for="email">Your Email:</label>
+<input type="email" name="email" class="form-control" placeholder="Your Email"
+ />
+</div>
+<div class="form-group">
+<label for="comment">Your Comment:</label>
+<textarea class="form-control" name="comment">
+</textarea>
+</div>
+<input type="submit" name="submit" class="btn btn-success btn-lg" value="Submit"
+/>
+</form>
+      </div>
+
     </div>
   </div>
 </div>
